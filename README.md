@@ -45,7 +45,7 @@ At smaller viewport widths, the layout changes to:
     │       SIGN-UP FORM       │
     └──────────────────────────┘
 
-The form fields also change from two columns to a single-column layout.
+The form fields also change from two columns to a single-column layout
 
 ### Form Fields
 

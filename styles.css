@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+}
+.main{
+    min-height: 100%;
+    display: flex;
+}
+input{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 300px;
+    height: 30px;
+}
+.banner{
+    width: 40%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-image: url("https://i.pinimg.com/736x/92/46/83/9246833d317f76b2c7135925b2b07998.jpg");
+    background-size: 170%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.formArea{
+    margin-left: 5%;
+    width: 60%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo{
+    color: white;
+    font-size: 10vh;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 8vh;
+    
+
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+}
+.logo img{
+
+
+    height: clamp(80px, 40vh, 190px);
+    
+}
+.bannerCredit {
+    margin-top: auto;
+    margin-bottom: 5px;
+
+    max-width: calc(100% - 40px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+
+}
+.bannerCredit a{
+    color: bisque;
+}
+
+
+
+
+label{
+    display: block;
+    font-size: 30px;    
+    font-family: "TSTAR PRO W00 BOLD"; 
+
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 5px;
+    margin: 5px;
+}
+form{
+    display: flex;
+    gap: 5vw;
+}
+.formGuide{
+    font-size: 70px;
+    font-family: "TSTAR W00 Bold"; 
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.formEntry{
+    max-width: 100%;
+    margin-right: 50px;
+    background-color: rgb(255, 255, 255) ;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    padding: 20px;
+    box-shadow: 0 6px 8px -4px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+    form {
+        flex-direction: column;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .banner{
+        width: 100%;
+    }
+    .formArea{
+        width: 100%;
+        
+    }
+    .banner{
+        background-image: none;
+        background-color: black;
+    }
+}
